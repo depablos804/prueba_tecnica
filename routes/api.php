@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/reserva',[reservationController::class,'mostrar']);
-Route::post('/reserva2',[reservationController::class,'reserveRequest']);
+Route::get('/rooms',[reservationController::class,'mostrar']);
+Route::post('/reserva',[reservationController::class,'reserveRequest']);

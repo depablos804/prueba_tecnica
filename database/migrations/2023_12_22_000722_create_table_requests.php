@@ -20,7 +20,7 @@ return new class extends Migration
             $table->bigInteger('reservation_id')->nullable();
             $table->string('status')->default('i');
             $table->timestamp('dateinit');
-            $table->timestamp('dateout');
+            $table->timestamp('dateout')->nullable();
             $table->timestamps();
         });
     }
